@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+#blue
+ {
+   background-color: blueviolet;
+   height: 100px;
+   width: 100px;
+   
+   font-size: larger;
+   
+ }
+</style>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function()
+  {
+    $("p").hide(function()
+    {
+        alert("done with hiding")
+    })
+  })
+})
+</script>
+</head>
+<body>
+ 
+<p>I am Divyesh I love cooking I 
+    can sing pretty good I also play 
+    virtual games.I live in Mumbai.
+    I also practice origami in my
+    free time
+
+</p>
+
+<button id='b1'>Hide</button>
+
+
+
+</body>
+</html>

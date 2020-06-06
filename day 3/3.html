@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+             
+               $("input[name='fruit']").click(function(){
+                var fruitName =$("input[name='fruit']:checked").val();
+                $("ul").append("<li>"+fruitName+"</li>");
+               });
+                
+            });
+        </script>
+        <body>
+            <h4>List of Fruits:</h4>
+          <ul>
+              
+          </ul>
+          <h4>Pleae select any fruit to add into list</h4>
+           <input type="radio" name="fruit" value="Mango"><label>Mango</label><br/>
+           <input type="radio" name="fruit"  value="cherry"><label>cherry</label><br/>
+           <input type="radio"  name="fruit" value="melon"><label>melon</label><br/>
+           <input type="radio"  name="fruit" value="banana"><label>banana</label><br/>
+        </body>
+    </head>
+</html>

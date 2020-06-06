@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2</title>
+        <!--2. Create a paragraph, write 5 line about you. on mouse over hide paragraph and on mouse out show paragraph -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+           $(document).ready(function()
+           {
+$("#p2").mouseenter(function()
+{
+    $(this).hide()
+})
+$("#p2").mouseleave(function()
+{
+    $(this).show()
+})
+           })
+        </script>
+    </head>
+    <body>
+  
+       <p></p>
+        <p id="p2">I love Cooking</p>
+        <p id="p3">I play pubg</p>
+        <p id="p4">I am graduate</p>
+        <p id="p5">I live in mumbai</p>
+    </body>
+</html>

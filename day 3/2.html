@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.blue
+ {
+    
+   color: blueviolet;
+   height: 100px;
+   width: 100px;
+   border-style: dotted;
+   
+   font-size: larger;
+   
+ }
+ 
+</style>
+<script>
+$(document).ready(function(){
+ $("#b1").click(function(){
+     $("div").removeClass("blue")
+     
+ })
+})
+</script>
+</head>
+<body>
+ 
+
+
+<button id='b1'>Hide</button>
+<div id="div" class="blue" style="background-color: crimson;height: 200px;width: 200px;">
+
+</div>
+
+
+
+</body>
+</html>

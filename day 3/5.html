@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("input[name='radioColor']").click(function(){
+                var colorName = $("input[name='radioColor']:checked").val();
+                $("textarea").css('color',colorName);
+              });
+            });
+        </script>
+        <style>
+          
+        </style>
+        <body>
+          <input type="radio" name="radioColor" value="red"><label>red</label><br/>
+          <input type="radio" name="radioColor" value="green"><label>green</label><br/>
+          <input type="radio" name="radioColor" value="blue"><label>blue</label><br/><br/>
+          <textarea cols="20" rows="5"></textarea>
+
+           
+        </body>
+    </head>
+</html>

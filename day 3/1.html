@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                  $('#t2').val($('#t1').val());
+              });
+            });
+        </script>
+        <style>
+          
+        </style>
+        <body>
+          <label>Text Box 1</label><input id="t1"><br/>
+          <label>Text Box 2</label><input id="t2" readonly><br/>
+          <button>copy</button>
+
+           
+        </body>
+    </head>
+</html>
